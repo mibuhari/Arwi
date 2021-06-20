@@ -1,1 +1,3 @@
-# Arwi
+### Arwi ###
+ArabuTamil (Arwi) Script
+
