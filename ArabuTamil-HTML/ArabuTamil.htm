@@ -1,0 +1,542 @@
+﻿<html>
+<head>
+<title>Arabu Tamil Software</title>
+<meta name="keywords" content="Qadiriya, Thariqah, Islamic Speeches, Islamic Songs, Islamic books, Islamic photos">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<script language=javascript>
+var iv;      
+var il;      
+
+function deleteAll () {
+	var outputNode = document.getElementById( 'keyword' );
+	outputNode.value = "";
+	}
+      
+function bk(it)      
+{ 
+   iv = it; 
+   il = iv.length; 
+   document.GET.keyword.focus();
+}
+      
+function english(eelam)      
+{     eelam = eelam.replace(/a/g, "a");       return eelam;      }      
+      
+      
+function bamini(eelam)      
+{      
+eelam = eelam.replace(/m/g, "அ");
+eelam = eelam.replace(/M/g, "ஆ");
+eelam = eelam.replace(/,/g, "இ");
+eelam = eelam.replace(/</g, "ஈ");
+eelam = eelam.replace(/c/g, "உ");
+eelam = eelam.replace(/C/g, "ஊ");
+eelam = eelam.replace(/v/g, "எ");
+eelam = eelam.replace(/V/g, "ஏ");
+eelam = eelam.replace(/I/g, "ஐ");
+eelam = eelam.replace(/x/g, "ஒ");
+eelam = eelam.replace(/X/g, "ஓ");
+eelam = eelam.replace(/Xs/g, "ஓெள");
+eelam = eelam.replace(/=/g, "ஃ");
+
+eelam = eelam.replace(/க;/g, "க்");
+eelam = eelam.replace(/f/g, "க");
+eelam = eelam.replace(/கh/g, "கா");
+eelam = eelam.replace(/கp/g, "கி");
+eelam = eelam.replace(/கP/g, "கீ");
+eelam = eelam.replace(/F/g, "கு");
+eelam = eelam.replace(/\$/g, "கூ");
+eelam = eelam.replace(/nக/g, "கெ");
+eelam = eelam.replace(/Nக/g, "கே");
+eelam = eelam.replace(/கெh/g, "கொ");
+eelam = eelam.replace(/கேh/g, "கோ");
+eelam = eelam.replace(/iக/g, "கை");
+eelam = eelam.replace(/கெs/g, "கெள");
+
+eelam = eelam.replace(/ழ;/g, "ழ்");
+eelam = eelam.replace(/o/g, "ழ");
+eelam = eelam.replace(/ழh/g, "ழா");
+eelam = eelam.replace(/ழp/g, "ழி");
+eelam = eelam.replace(/ழP/g, "ழீ");
+eelam = eelam.replace(/O/g, "ழு");
+eelam = eelam.replace(/\*/g, "ழூ");
+eelam = eelam.replace(/ழுh/g, "ழூ");
+eelam = eelam.replace(/nழ/g, "ழெ");
+eelam = eelam.replace(/Nழ/g, "ழே");
+eelam = eelam.replace(/ழெh/g, "ழொ");
+eelam = eelam.replace(/ழேh/g, "ழோ");
+eelam = eelam.replace(/iழ/g, "ழை");
+eelam = eelam.replace(/ழெs/g, "ழெள");
+
+eelam = eelam.replace(/ஞ;/g, "ஞ்");
+eelam = eelam.replace(/Q/g, "ஞ");
+eelam = eelam.replace(/ஞh/g, "ஞா");
+eelam = eelam.replace(/ஞp/g, "ஞி");
+eelam = eelam.replace(/ஞP/g, "ஞீ");
+
+eelam = eelam.replace(/nஞ/g, "ஞெ");
+eelam = eelam.replace(/Nஞ/g, "ஞே");
+eelam = eelam.replace(/ஞெh/g, "ஞொ");
+eelam = eelam.replace(/ஞேh/g, "ஞோ");
+eelam = eelam.replace(/iஞ/g, "ஞை");
+eelam = eelam.replace(/ஞெs/g, "ஞெள");
+
+eelam = eelam.replace(/ங;/g, "ங்");
+eelam = eelam.replace(/q/g, "ங");
+eelam = eelam.replace(/ஙh/g, "ஙா");
+eelam = eelam.replace(/ஙp/g, "ஙி");
+eelam = eelam.replace(/ஙP/g, "ஙீ");
+eelam = eelam.replace(/nங/g, "ஙெ");
+eelam = eelam.replace(/Nங/g, "ஙே");
+eelam = eelam.replace(/ஙெh/g, "ஙொ");
+eelam = eelam.replace(/ஙேh/g, "ஙோ");
+eelam = eelam.replace(/iங/g, "ஙை");
+eelam = eelam.replace(/ஙெs/g, "ஙெள");
+
+eelam = eelam.replace(/ஷ;/g, "ஷ்");
+eelam = eelam.replace(/\\/g, "ஷ");
+eelam = eelam.replace(/ஷh/g, "ஷா");
+eelam = eelam.replace(/ஷp/g, "ஷி");
+eelam = eelam.replace(/ஷP/g, "ஷீ");
+eelam = eelam.replace(/ஷ\{/g, "ஷு");
+eelam = eelam.replace(/ஷ_/g, "ஷூ");
+eelam = eelam.replace(/nஷ/g, "ஷெ");
+eelam = eelam.replace(/Nஷ/g, "ஷே");
+eelam = eelam.replace(/ஷெh/g, "ஷொ");
+eelam = eelam.replace(/ஷேh/g, "ஷோ");
+eelam = eelam.replace(/iஷ/g, "ஷை");
+eelam = eelam.replace(/ஷெs/g, "ஷெள");
+
+eelam = eelam.replace(/ந;/g, "ந்");
+eelam = eelam.replace(/e/g, "ந");
+eelam = eelam.replace(/நh/g, "நா");
+eelam = eelam.replace(/நp/g, "நி");
+eelam = eelam.replace(/நP/g, "நீ");
+eelam = eelam.replace(/E/g, "நு");
+eelam = eelam.replace(/நு\}/g, "நூ");
+eelam = eelam.replace(/nந/g, "நெ");
+eelam = eelam.replace(/Nந/g, "நே");
+eelam = eelam.replace(/நெh/g, "நொ");
+eelam = eelam.replace(/நேh/g, "நோ");
+eelam = eelam.replace(/iந/g, "நை");
+eelam = eelam.replace(/நெs/g, "நெள");
+
+eelam = eelam.replace(/த;/g, "த்");
+eelam = eelam.replace(/j/g, "த");
+eelam = eelam.replace(/தh/g, "தா");
+eelam = eelam.replace(/தp/g, "தி");
+eelam = eelam.replace(/தP/g, "தீ");
+eelam = eelam.replace(/J/g, "து");
+eelam = eelam.replace(/துh/g, "தூ");
+eelam = eelam.replace(/து\} /g, "தூ");
+eelam = eelam.replace(/nத/g, "தெ");
+eelam = eelam.replace(/Nத/g, "தே");
+eelam = eelam.replace(/தெh/g, "தொ");
+eelam = eelam.replace(/தேh/g, "தோ");
+eelam = eelam.replace(/iத/g, "தை");
+eelam = eelam.replace(/தெs/g, "தெள");
+
+eelam = eelam.replace(/ச;/g, "ச்");
+eelam = eelam.replace(/r/g, "ச");
+eelam = eelam.replace(/சh/g, "சா");
+eelam = eelam.replace(/சp/g, "சி");
+eelam = eelam.replace(/சP/g, "சீ");
+eelam = eelam.replace(/R/g, "சு");
+eelam = eelam.replace(/சுh/g, "சூ");
+eelam = eelam.replace(/சு\+/g, "சூ");
+eelam = eelam.replace(/ச\+/g, "சூ");
+eelam = eelam.replace(/#/g, "சூ");
+eelam = eelam.replace(/nச/g, "செ");
+eelam = eelam.replace(/Nச/g, "சே");
+eelam = eelam.replace(/செh/g, "சொ");
+eelam = eelam.replace(/சேh/g, "சோ");
+eelam = eelam.replace(/iச/g, "சை");
+eelam = eelam.replace(/செs/g, "செள");
+
+eelam = eelam.replace(/ஜ;/g, "ஜ்");
+eelam = eelam.replace(/\[/g, "ஜ");
+eelam = eelam.replace(/ஜh/g, "ஜா");
+eelam = eelam.replace(/ஜp/g, "ஜி");
+eelam = eelam.replace(/ஜP/g, "ஜீ");
+eelam = eelam.replace(/ஜ\{/g, "ஜு");
+eelam = eelam.replace(/ஜ_/g, "ஜூ");
+eelam = eelam.replace(/nஜ/g, "ஜெ");
+eelam = eelam.replace(/Nஜ/g, "ஜே");
+eelam = eelam.replace(/ஜெh/g, "ஜொ");
+eelam = eelam.replace(/ஜேh/g, "ஜோ");
+eelam = eelam.replace(/iஜ/g, "ஜை");
+eelam = eelam.replace(/ஜெs/g, "ஜெள");
+
+eelam = eelam.replace(/ஹ;/g, "ஹ்");
+eelam = eelam.replace(/`/g, "ஹ");
+eelam = eelam.replace(/ஹh/g, "ஹா");
+eelam = eelam.replace(/ஹp/g, "ஹி");
+eelam = eelam.replace(/ஹP/g, "ஹீ");
+eelam = eelam.replace(/ஹ\{/g, "ஹு");
+eelam = eelam.replace(/ஹ_/g, "ஹூ");
+eelam = eelam.replace(/nஹ/g, "ஹெ");
+eelam = eelam.replace(/Nஹ/g, "ஹே");
+eelam = eelam.replace(/ஹெh/g, "ஹொ");
+eelam = eelam.replace(/ஹேh/g, "ஹோ");
+eelam = eelam.replace(/iஹ/g, "ஹை");
+eelam = eelam.replace(/ஹெs/g, "ஹெள");
+
+eelam = eelam.replace(/ஸ;/g, "ஸ்");
+eelam = eelam.replace(/\]/g, "ஸ");
+eelam = eelam.replace(/ஸh/g, "ஸா");
+eelam = eelam.replace(/ஸp/g, "ஸி");
+eelam = eelam.replace(/ஸP/g, "ஸீ");
+eelam = eelam.replace(/ஸ\{/g, "ஸு");
+eelam = eelam.replace(/ஸ_/g, "ஸூ");
+eelam = eelam.replace(/nஸ/g, "ஸெ");
+eelam = eelam.replace(/Nஸ/g, "ஸே");
+eelam = eelam.replace(/ஸெh/g, "ஸொ");
+eelam = eelam.replace(/ஸேh/g, "ஸோ");
+eelam = eelam.replace(/iஸ/g, "ஸை");
+eelam = eelam.replace(/ஸெs/g, "ஸெள");
+
+eelam = eelam.replace(/ர;/g, "ர்");
+eelam = eelam.replace(/H/g, "ர்");
+eelam = eelam.replace(/h;/g, "ர்");
+eelam = eelam.replace(/u/g, "ர");
+eelam = eelam.replace(/hp/g, "ரி");
+eelam = eelam.replace(/hP/g, "ரீ");
+eelam = eelam.replace(/ரh/g, "ரா");
+eelam = eelam.replace(/ரp/g, "ரி");
+eelam = eelam.replace(/ரP/g, "ரீ");
+eelam = eelam.replace(/U/g, "ரு");
+eelam = eelam.replace(/ருh/g, "ரூ");
+eelam = eelam.replace(/\&/g, "ரூ");
+eelam = eelam.replace(/nர/g, "ரெ");
+eelam = eelam.replace(/Nர/g, "ரே");
+eelam = eelam.replace(/ரெh/g, "ரொ");
+eelam = eelam.replace(/ரேh/g, "ரோ");
+eelam = eelam.replace(/iர/g, "ரை");
+eelam = eelam.replace(/ரெs/g, "ரெள");
+
+eelam = eelam.replace(/ற;/g, "ற்");
+eelam = eelam.replace(/w/g, "ற");
+eelam = eelam.replace(/றh/g, "றா");
+eelam = eelam.replace(/றp/g, "றி");
+eelam = eelam.replace(/றP/g, "றீ");
+eelam = eelam.replace(/W/g, "று");
+eelam = eelam.replace(/றுh/g, "றூ");
+eelam = eelam.replace(/று\}/g, "றூ");
+eelam = eelam.replace(/nற/g, "றெ");
+eelam = eelam.replace(/Nற/g, "றே");
+eelam = eelam.replace(/றெh/g, "றொ");
+eelam = eelam.replace(/றேh/g, "றோ");
+eelam = eelam.replace(/iற/g, "றை");
+eelam = eelam.replace(/றெs/g, "றெள");
+
+
+eelam = eelam.replace(/ட;/g, "ட்");
+eelam = eelam.replace(/l/g, "ட");
+eelam = eelam.replace(/டh/g, "டா");
+eelam = eelam.replace(/டp/g, "டி");
+eelam = eelam.replace(/டP/g, "டீ");
+eelam = eelam.replace(/b/g, "டி");
+eelam = eelam.replace(/B/g, "டீ");
+eelam = eelam.replace(/L/g, "டு");
+eelam = eelam.replace(/டுh/g, "டூ");
+eelam = eelam.replace(/\^/g, "டூ");
+eelam = eelam.replace(/nட/g, "டெ");
+eelam = eelam.replace(/Nட/g, "டே");
+eelam = eelam.replace(/டெh/g, "டொ");
+eelam = eelam.replace(/டேh/g, "டோ");
+
+eelam = eelam.replace(/ப;/g, "ப்");
+eelam = eelam.replace(/g/g, "ப");
+eelam = eelam.replace(/பh/g, "பா");
+eelam = eelam.replace(/பp/g, "பி");
+eelam = eelam.replace(/பP/g, "பீ");
+eelam = eelam.replace(/G/g, "பு");
+eelam = eelam.replace(/புh/g, "பூ");
+eelam = eelam.replace(/பு\+/g, "பூ");
+eelam = eelam.replace(/ப\+/g, "பூ");
+eelam = eelam.replace(/nப/g, "பெ");
+eelam = eelam.replace(/Nப/g, "பே");
+eelam = eelam.replace(/பெh/g, "பொ");
+eelam = eelam.replace(/பேh/g, "போ");
+eelam = eelam.replace(/iப/g, "பை");
+eelam = eelam.replace(/பெs/g, "பெள");
+
+eelam = eelam.replace(/ம;/g, "ம்");
+eelam = eelam.replace(/k/g, "ம");
+eelam = eelam.replace(/மh/g, "மா");
+eelam = eelam.replace(/மp/g, "மி");
+eelam = eelam.replace(/மP/g, "மீ");
+eelam = eelam.replace(/K/g, "மு");
+eelam = eelam.replace(/முh/g, "மூ");
+eelam = eelam.replace(/\%/g, "மூ");
+eelam = eelam.replace(/nம/g, "மெ");
+eelam = eelam.replace(/Nம/g, "மே");
+eelam = eelam.replace(/மெh/g, "மொ");
+eelam = eelam.replace(/மேh/g, "மோ");
+eelam = eelam.replace(/iம/g, "மை");
+eelam = eelam.replace(/மெs/g, "மெள");
+
+eelam = eelam.replace(/ய;/g, "ய்");
+eelam = eelam.replace(/a/g, "ய");
+eelam = eelam.replace(/யh/g, "யா");
+eelam = eelam.replace(/யp/g, "யி");
+eelam = eelam.replace(/யP/g, "யீ");
+eelam = eelam.replace(/A/g, "யு");
+eelam = eelam.replace(/யுh/g, "யூ");
+eelam = eelam.replace(/ய\+/g, "யூ");
+eelam = eelam.replace(/யு\+/g, "யூ");
+eelam = eelam.replace(/nய/g, "யெ");
+eelam = eelam.replace(/Nய/g, "யே");
+eelam = eelam.replace(/யெh/g, "யொ");
+eelam = eelam.replace(/யேh/g, "யோ");
+eelam = eelam.replace(/iய/g, "யை");
+eelam = eelam.replace(/யெs/g, "யெள");
+
+eelam = eelam.replace(/ன;/g, "ன்");
+eelam = eelam.replace(/d/g, "ன");
+eelam = eelam.replace(/னh/g, "னா");
+eelam = eelam.replace(/னp/g, "னி");
+eelam = eelam.replace(/னP/g, "னீ");
+eelam = eelam.replace(/D/g, "னு");
+eelam = eelam.replace(/னுh/g, "னூ");
+eelam = eelam.replace(/னு\}/g, "னூ");
+eelam = eelam.replace(/nன/g, "னெ");
+eelam = eelam.replace(/Nன/g, "னே");
+eelam = eelam.replace(/னெh/g, "னொ");
+eelam = eelam.replace(/னேh/g, "னோ");
+eelam = eelam.replace(/iன/g, "னை");
+eelam = eelam.replace(/னெs/g, "னெள");
+
+eelam = eelam.replace(/ண;/g, "ண்");
+eelam = eelam.replace(/z/g, "ண");
+eelam = eelam.replace(/ணh/g, "ணா");
+eelam = eelam.replace(/ணp/g, "ணி");
+eelam = eelam.replace(/ணP/g, "ணீ");
+eelam = eelam.replace(/Z/g, "ணு");
+eelam = eelam.replace(/ணுh/g, "ணூ");
+eelam = eelam.replace(/ணு\}/g, "ணூ");
+eelam = eelam.replace(/nண/g, "ணெ");
+eelam = eelam.replace(/Nண/g, "ணே");
+eelam = eelam.replace(/ணெh/g, "ணொ");
+eelam = eelam.replace(/ணேh/g, "ணோ");
+eelam = eelam.replace(/iண/g, "ணை");
+eelam = eelam.replace(/ணெs/g, "ணெள");
+eelam = eelam.replace(/iட/g, "டை");
+eelam = eelam.replace(/டெs/g, "டெள");
+
+eelam = eelam.replace(/ல;/g, "ல்");
+eelam = eelam.replace(/y/g, "ல");
+eelam = eelam.replace(/லh/g, "லா");
+eelam = eelam.replace(/லp/g, "லி");
+eelam = eelam.replace(/லP/g, "லீ");
+eelam = eelam.replace(/Y/g, "லு");
+eelam = eelam.replace(/லுh/g, "லூ");
+eelam = eelam.replace(/லு\}/g, "லூ");
+eelam = eelam.replace(/nல/g, "லெ");
+eelam = eelam.replace(/Nல/g, "லே");
+eelam = eelam.replace(/லெh/g, "லொ");
+eelam = eelam.replace(/லேh/g, "லோ");
+eelam = eelam.replace(/iல/g, "லை");
+eelam = eelam.replace(/லெs/g, "லெள");
+
+eelam = eelam.replace(/ள;/g, "ள்");
+eelam = eelam.replace(/s/g, "ள");
+eelam = eelam.replace(/ளh/g, "ளா");
+eelam = eelam.replace(/ளp/g, "ளி");
+eelam = eelam.replace(/ளP/g, "ளீ");
+eelam = eelam.replace(/S/g, "ளு");
+eelam = eelam.replace(/ளுh/g, "ளூ");
+eelam = eelam.replace(/nள/g, "ளெ");
+eelam = eelam.replace(/Nள/g, "ளே");
+eelam = eelam.replace(/ளெh/g, "ளொ");
+eelam = eelam.replace(/ளேh/g, "ளோ");
+eelam = eelam.replace(/iள/g, "ளை");
+eelam = eelam.replace(/ளெs/g, "ளெள");
+
+eelam = eelam.replace(/வ;/g, "வ்");
+eelam = eelam.replace(/t/g, "வ");
+eelam = eelam.replace(/வh/g, "வா");
+eelam = eelam.replace(/வp/g, "வி");
+eelam = eelam.replace(/வP/g, "வீ");
+eelam = eelam.replace(/T/g, "வு");
+eelam = eelam.replace(/வுh/g, "வூ");
+eelam = eelam.replace(/வ\+/g, "வூ");
+eelam = eelam.replace(/வு\+/g, "வூ");
+eelam = eelam.replace(/nவ/g, "வெ");
+eelam = eelam.replace(/Nவ/g, "வே");
+eelam = eelam.replace(/வெh/g, "வொ");
+eelam = eelam.replace(/வேh/g, "வோ");
+eelam = eelam.replace(/iவ/g, "வை");
+eelam = eelam.replace(/வெs/g, "வெள");
+return eelam;      
+}      
+      
+function arabutamil(eelam)      
+{      
+eelam = eelam.replace(/a/g, "\u0634");
+eelam = eelam.replace(/s/g, "\u0633");
+eelam = eelam.replace(/d/g, "\u064A");
+eelam = eelam.replace(/f/g, "\u0628");
+eelam = eelam.replace(/g/g, "\u0644");
+eelam = eelam.replace(/h/g, "\u0627");
+eelam = eelam.replace(/j/g, "\u062A");
+eelam = eelam.replace(/k/g, "\u0646");
+eelam = eelam.replace(/l/g, "\u0645");
+eelam = eelam.replace(/;/g, "\u0643");
+eelam = eelam.replace(/'/g, "\u0637");
+
+eelam = eelam.replace(/A/g, "\u0650");
+eelam = eelam.replace(/S/g, "\u064D");
+eelam = eelam.replace(/D/g, "\u0655");
+eelam = eelam.replace(/F/g, "\u0656");
+eelam = eelam.replace(/G/g, "\u0671");
+eelam = eelam.replace(/H/g, "\u0623");
+eelam = eelam.replace(/J/g, "\u0640");
+eelam = eelam.replace(/K/g, "\u06B9");
+eelam = eelam.replace(/L/g, "\u061B");
+
+eelam = eelam.replace(/q/g, "\u0636");
+eelam = eelam.replace(/w/g, "\u0635");
+eelam = eelam.replace(/e/g, "\u062B");
+eelam = eelam.replace(/r/g, "\u0642");
+eelam = eelam.replace(/t/g, "\u0641");
+eelam = eelam.replace(/y/g, "\u063A");
+eelam = eelam.replace(/u/g, "\u0639");
+eelam = eelam.replace(/i/g, "\u0647");
+eelam = eelam.replace(/o/g, "\u062E");
+eelam = eelam.replace(/p/g, "\u062D");
+eelam = eelam.replace(/\[/g, "\u062C");
+eelam = eelam.replace(/\]/g, "\u062F");
+eelam = eelam.replace(/\\/g, "\u06FB");
+
+eelam = eelam.replace(/Q/g, "\u064E");
+eelam = eelam.replace(/W/g, "\u064B");
+eelam = eelam.replace(/E/g, "\u064F");
+eelam = eelam.replace(/R/g, "\u064C");
+eelam = eelam.replace(/T/g, "\u06A3");
+eelam = eelam.replace(/Y/g, "\u0625");
+eelam = eelam.replace(/U/g, "\u0640\u200d\u070f\u0734");
+eelam = eelam.replace(/I/g, "\u0640\u200d\u070f\u0746");
+eelam = eelam.replace(/O/g, "\u065C");
+eelam = eelam.replace(/P/g, "\u0657");
+eelam = eelam.replace(/\|/g, "\u0686");
+
+eelam = eelam.replace(/z/g, "\u0694");
+eelam = eelam.replace(/x/g, "\u0621");
+eelam = eelam.replace(/c/g, "\u0624");
+eelam = eelam.replace(/v/g, "\u0631");
+eelam = eelam.replace(/b/g, "\u068A");
+eelam = eelam.replace(/n/g, "\u0649");
+eelam = eelam.replace(/m/g, "\u0629");
+eelam = eelam.replace(/\,/g, "\u0648");
+eelam = eelam.replace(/\./g, "\u0632");
+eelam = eelam.replace(/\//g, "\u0638");
+
+eelam = eelam.replace(/Z/g, "\u0653");
+eelam = eelam.replace(/X/g, "\u0652");
+eelam = eelam.replace(/C/g, "\u0640\u0328");
+eelam = eelam.replace(/V/g, "\u0670");
+eelam = eelam.replace(/B/g, "\u0654");
+eelam = eelam.replace(/N/g, "\u0622");
+eelam = eelam.replace(/M/g, "\u066C");
+eelam = eelam.replace(/\</g, "\u066B");
+eelam = eelam.replace(/\>/g, "\u06e9");
+eelam = eelam.replace(/\?/g, "\u061F");
+
+eelam = eelam.replace(/`/g, "\u0651");
+eelam = eelam.replace(/~/g, "\u0630");
+eelam = eelam.replace(/1/g, "\u0661");
+eelam = eelam.replace(/2/g, "\u0662");
+eelam = eelam.replace(/3/g, "\u0663");
+eelam = eelam.replace(/4/g, "\u0664");
+eelam = eelam.replace(/5/g, "\u0665");
+eelam = eelam.replace(/6/g, "\u0666");
+eelam = eelam.replace(/7/g, "\u0667");
+eelam = eelam.replace(/8/g, "\u0668");
+eelam = eelam.replace(/9/g, "\u0669");
+eelam = eelam.replace(/0/g, "\u0660");
+
+return eelam;      
+}      
+     
+function eelameditor(o) {  
+if (event.keyCode == 8) {
+if (o.form.keyword.value.length == 0) {
+var dtxt ="";
+bk(dtxt);
+}
+else {bk (o.form.keyword.value);}
+}
+else{
+if(il > 0) {      var eelam = o.form.keyword.value.substr(il,o.form.keyword.value.length);      }      
+else      {      var eelam = o.form.keyword.value;      }      
+ 
+if (o.form.xyz[0].checked == true){    // first radio button              
+o.form.keyword.dir = "ltr";  // to write from left to right
+eelam = english(eelam);                 
+}                  
+      
+      
+if (o.form.xyz[1].checked == true){      // second radio button
+o.form.keyword.dir = "ltr";  // to write from left to right
+eelam = bamini(eelam);      // function bamini      
+}      
+      
+if (o.form.xyz[2].checked == true){      // third radio button
+o.form.keyword.dir = "rtl";  // to write from right to left
+}      
+
+if (o.form.xyz[3].checked == true){      // fourth radio button
+o.form.keyword.dir = "rtl";  // to write from right to left
+eelam = arabutamil(eelam);   // function arabutamil
+}      
+      
+if (il > 0) {      o.form.keyword.value = iv + eelam;      }      
+else      {      o.form.keyword.value = eelam;      }      
+ }      
+}
+
+function saveAsMe (o)
+{
+ str = o.form.keyword.value;
+ mydoc = document.open();
+ mydoc.write(str);
+ mydoc.execCommand("saveAs",true,"ArabuTamil.html");
+ mydoc.close();
+}
+
+function clearMe (o)
+{
+ o.form.keyword.value = "";
+}
+
+</script>
+
+</SCRIPT>
+
+<title>Arabu Tamil Software</title>
+</head>
+<body onload="deleteAll()" bgcolor="#FFFFFF" text="#000000" link="#0099FF" vlink="#000000" alink="#009900">
+<table width="350" align="center" border="1" cellspacing="0" cellpadding="3" bgcolor="#FFFFCC">
+<tr align="center" valign="top"><td>
+<form name=GET accept-charset="utf-8" method="GET">
+<table border="1">
+<tr>
+<td align="center"><script src="TamilDisplay.js" type="text/javascript"></script></td>
+<td align="center"><script src="ArabuTamilDisplay.js" type="text/javascript"></script></td>
+</tr>
+</table>
+ <input onclick=bk(document.GET.keyword.value) type=radio CHECKED name=xyz><FONT size=2> English / Unicode / Use Tamil Keypad Above </FONT>
+<input onclick=bk(document.GET.keyword.value) type=radio name=xyz><FONT size=2> Bamini / Sarukesi</FONT>
+ <input onclick=bk(document.GET.keyword.value) type=radio name=xyz><FONT size=2> Use ArabuTamil Keypad Above </FONT>
+<input onclick=bk(document.GET.keyword.value) type=radio name=xyz><FONT size=2> ArabuTamil Typing </FONT></FONT><P>
+<textarea onkeyup=eelameditor(this); name="keyword" cols="100" rows="15"></textarea>
+<br>
+<input type=button value="Save As" onclick="saveAsMe(this);">
+<input type=button value="Clear Text Area" onclick="clearMe(this);">
+</form>
+</td></tr>
+</table>
+</body>
+</html>
